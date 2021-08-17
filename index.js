@@ -5,9 +5,11 @@ const app = express();
 const twitter = new Twitter({
   consumer_key: 'Ar3lqXZdbZeREva0xTJrJ5HEx',
   consumer_secret: 'N0va3tGHfoxX6dqBGQt4ClbuXUjESbNCvJkmLDi4jczcYJ8IqI',
-});
+}); 
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
   console.log('Twitter login backend listening to port 3000');
 });
 
